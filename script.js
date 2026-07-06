@@ -1,12 +1,13 @@
 // The Mani Bar by Savi website settings
 // Edit these values when Savina gives you her real details.
 const CONFIG = {
-  instagram: "",       // Example: "themanibarbysavi"
-  tiktok: "",          // Example: "themanibarbysavi"
-  phone: "",           // Example: "+233 24 000 0000"
-  whatsappNumber: "",  // Example: "233240000000" - no plus sign or spaces
-  location: "Accra / Ghana",
-  bookingMessage: "Hello Savina, I want to book a nail appointment.",
+  instagram: "babeyharh",
+  snapchat: "savi.xx2",
+  phone: "+233 25 655 6771",
+  whatsappNumber: "233256556771",
+  location: "Lapaz, Accra",
+  workingDays: "Monday to Saturday",
+  bookingMessage: "Hello Savina, I want to book a nail appointment at The Mani Bar by Savi.",
   // Leave siteUrl empty to make the QR code use the live URL after you deploy.
   // If you already know the final link, paste it here, e.g. "https://richie0987612345.github.io/the-mani-bar-by-savi/"
   siteUrl: ""
@@ -51,7 +52,7 @@ if (document.querySelector(`[data-page="${startingPage}"]`)) showPage(startingPa
 
 // Contact details
 const instagramLink = document.getElementById('instagramLink');
-const tiktokLink = document.getElementById('tiktokLink');
+const snapchatLink = document.getElementById('snapchatLink');
 const phoneLink = document.getElementById('phoneLink');
 const bookingLink = document.getElementById('bookingLink');
 
@@ -59,9 +60,9 @@ if (CONFIG.instagram) {
   instagramLink.href = `https://instagram.com/${CONFIG.instagram.replace('@', '')}`;
   instagramLink.querySelector('span').textContent = `@${CONFIG.instagram.replace('@', '')}`;
 }
-if (CONFIG.tiktok) {
-  tiktokLink.href = `https://www.tiktok.com/@${CONFIG.tiktok.replace('@', '')}`;
-  tiktokLink.querySelector('span').textContent = `@${CONFIG.tiktok.replace('@', '')}`;
+if (CONFIG.snapchat) {
+  snapchatLink.href = `https://www.snapchat.com/add/${CONFIG.snapchat.replace('@', '')}`;
+  snapchatLink.querySelector('span').textContent = CONFIG.snapchat.replace('@', '');
 }
 if (CONFIG.phone) {
   phoneLink.href = `tel:${CONFIG.phone.replace(/\s/g, '')}`;
@@ -77,7 +78,8 @@ if (CONFIG.whatsappNumber) {
   });
 }
 
-document.querySelectorAll('.contact-lines span strong').forEach(el => el.textContent = CONFIG.location);
+document.querySelectorAll('[data-location]').forEach(el => el.textContent = CONFIG.location);
+document.querySelectorAll('[data-working-days]').forEach(el => el.textContent = CONFIG.workingDays);
 
 // QR code for the live portfolio link. The local fallback image is assets/qr-portfolio.png
 function getPortfolioUrl() {
