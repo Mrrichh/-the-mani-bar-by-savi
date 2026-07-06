@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="The Mani Bar by Savi logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4d5cc"/>
+      <stop offset="0.48" stop-color="#c97768"/>
+      <stop offset="1" stop-color="#7b3d36"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="58" fill="#fff8f4"/>
+  <path d="M38 200c38-36 62-86 57-151 45 18 70 53 70 92 0 34-22 56-53 56-27 0-47-17-50-43" fill="none" stroke="url(#g)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M131 56c22-15 56-14 70 10 17 28-7 58-49 64 38 3 58 25 54 50-4 24-28 42-66 42-27 0-50-9-65-28" fill="none" stroke="#8f4c43" stroke-width="8" stroke-linecap="round"/>
+  <path d="M181 31l7 17 17 7-17 7-7 17-7-17-17-7 17-7z" fill="#d4a36c" opacity=".9"/>
+  <path d="M58 44c15 15 36 11 46-8-18-5-36-2-46 8z" fill="#f2c9bf" opacity=".75"/>
+</svg>
