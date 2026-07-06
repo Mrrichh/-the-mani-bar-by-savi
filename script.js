@@ -10,7 +10,7 @@ const CONFIG = {
   bookingMessage: "Hello Savina, I want to book a nail appointment at The Mani Bar by Savi.",
   // Leave siteUrl empty to make the QR code use the live URL after you deploy.
   // If you already know the final link, paste it here, e.g. "https://richie0987612345.github.io/the-mani-bar-by-savi/"
-  siteUrl: ""
+  siteUrl: "https://mrrichh.github.io/-the-mani-bar-by-savi/"
 };
 
 const navButtons = document.querySelectorAll('[data-page-target]');
